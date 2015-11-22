@@ -1,0 +1,40 @@
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+
+1. e4 { No comment! } 1... e5 { No comment! } 2. Bc4 { No comment! } 2... Bc5 { No comment! } 3. Qh5 { No comment! } 3... Nf6 { No comment! } 4. Qxf7# { White is in checkmate. } *
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+
+1. e4 { No comment! } 1... e5 { No comment! } 2. Bc4 { No comment! } 2... Bc5 { No comment! } 3. Qh5 { No comment! } 3... Nf6 { No comment! } 4. Qxf7# { Black is in checkmate. } *
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+
+1. e4 e5 ( { -31 } 1... e5 ) ( { -40 } 1... Nc6 ) ( { -49 } 1... d5 ) ( { -56 } 1... e6 ) ( { -59 } 1... a6 ) 2. Bc4 ( { 34 } 2. Nf3 ) ( { 34 } 2. Nc3 ) ( { 14 } 2. f4 ) ( { 6 } 2. Ne2 ) ( { -7 } 2. d4 ) 2... Bc5 ( { 0 } 2... c6 ) ( { -34 } 2... Nf6 ) ( { -36 } 2... Nc6 ) ( { -38 } 2... d5 ) ( { -45 } 2... b5 ) 3. Qh5 ( { 39 } 3. Nf3 ) ( { 34 } 3. d3 ) ( { 34 } 3. Nc3 ) ( { 18 } 3. Qh5 ) ( { 6 } 3. d4 ) 3... Nf6 ( { 12 } 3... Qe7 ) ( { -8 } 3... Qf6 ) ( { -76 } 3... d5 ) ( { -227 } 3... Bxf2+ ) ( { -277 } 3... Nh6 ) 4. Qxf7# { Black is in checkmate. } ( { None } 4. Qxf7# ) ( { 38 } 4. Qxe5+ ) ( { -60 } 4. Qe2 ) ( { -98 } 4. Qf3 ) ( { -101 } 4. Qh4 ) *
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+
+1. e4 ( { 28 } 1. e4 ) ( { 20 } 1. Nf3 ) ( { 20 } 1. Nc3 ) ( { 20 } 1. d4 ) ( { 19 } 1. e3 ) 1... e5 ( { 19 } 1... e5 ) ( { 37 } 1... d5 ) ( { 50 } 1... e6 ) ( { 60 } 1... Nc6 ) ( { 68 } 1... d6 ) 2. Bc4 ( { 49 } 2. Nc3 ) ( { 32 } 2. f4 ) ( { 16 } 2. Bc4 ) ( { 16 } 2. Nf3 ) ( { 10 } 2. d4 ) 2... Bc5 ( { 20 } 2... Nf6 ) ( { 22 } 2... c6 ) ( { 29 } 2... d5 ) ( { 39 } 2... Nc6 ) ( { 52 } 2... b5 ) 3. Qh5 ( { 51 } 3. d4 ) ( { 38 } 3. Nf3 ) ( { 20 } 3. Nc3 ) ( { 17 } 3. d3 ) ( { 5 } 3. Qh5 ) 3... Nf6 ( { -15 } 3... Qe7 ) ( { 15 } 3... Qf6 ) ( { 31 } 3... d5 ) ( { 150 } 3... Nh6 ) ( { 186 } 3... Bxf2+ ) 4. Qxf7# ( { None } 4. Qxf7# ) ( { 50 } 4. Qxe5+ ) ( { -69 } 4. Qe2 ) ( { -90 } 4. Qh4 ) ( { -117 } 4. Qf3 ) *
+

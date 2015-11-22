@@ -1,0 +1,1 @@
+This directory is for test versions of the script(s).  I use these for testing various ideas, examining data structures, etc.  Unless your planning on helping to develop the script(s), there's probably little of interest here.
