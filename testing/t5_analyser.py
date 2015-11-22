@@ -20,7 +20,7 @@ import chess, chess.pgn, chess.uci
 #Engine settings
 engine_name = "stockfish6"
 pv_max = 5
-search_depth = 20
+search_depth = 5
 hash_size = 128
 
 #PGN files
@@ -46,49 +46,45 @@ while next_game:
 	
 	while this_node.variations:
 		
-		running_board = this_node.board()
+		last_node = this_node.end()
+		running_board = last_node.board()
 		
-		#Section not required yet
-		#if (running_board.is_checkmate()):
-		#	
-		#	if (running_board.turn):
-		#		
-		#		this_node.comment = "White is in checkmate."
-		#		
-		#	else:
-		#		
-		#		this_node.comment = "Black is in checkmate."
-		#		
-		#	break
-		#	
-		#elif (running_board.is_stalemate()):
-		#	
-		#	this_node.comment = "Position is stalemate."
-		#	break
-		#	
-		#else:
-		
-		engine.position(running_board)
-		engine.go(depth=search_depth)
-		
-		for j in engine_data.info["pv"]:
+		if (running_board.is_checkmate() or (running_board.is_stalemate())):
 			
-			pvmove = engine_data.info["pv"][j][0]
-			pvscore = engine_data.info["score"][j].cp
+			c
 			
-			if not running_board.turn:
+		else:
+		
+			engine.position(running_board)
+			engine.go(depth=search_depth)
+			
+			for j in engine_data.info["pv"]:
 				
-				pvscore = -pvscore
+				pvmove = engine_data.info["pv"][j][0]
+				pvscore = (engine_data.info["score"][j].cp)/100
 				
-			this_node.add_variation (pvmove,starting_comment = str(pvscore))
+				if not running_board.turn:
+					
+					if pvscore == None:
+						
+						print (engine_data.info["score"])
+						
+					else:
+						
+						pvscore = -pvscore
+						
+				#print (engine_data.info["score"])
+				this_node.add_variation (pvmove,starting_comment = str(pvscore))
+				
+			print (".", end = "", flush=True)
+			break
+			this_node = this_node.variation(0)
 			
-		print (".", end = "")
-		this_node = this_node.variation(0)
+		print()
 		
-	pgnout.write(str(next_game))
-	pgnout.write("\n\n")
-	next_game = chess.pgn.read_game(pgnin)
-	
+		pgnout.write(str(next_game))
+		pgnout.write("\n\n")
+		
 	i += 1
 	next_game = chess.pgn.read_game(pgnin)
 	
