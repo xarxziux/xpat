@@ -27,49 +27,131 @@ pgnin = open("pgn/gamesin.pgn", "r")
 pgnout = open("pgn/gamesout.pgn", "a")
 dataout = open("pgn/dataout.txt", "a")
 
-#Engine set-up
-engine = chess.uci.popen_engine(engine_name)
-engine.uci()
-engine.setoption({"Hash":hash_size})
-engine_data = chess.uci.InfoHandler()
-engine.info_handlers.append(engine_data)
-
-next_game = chess.pgn.read_game(pgnin)
-
-i = 0
-
-while next_game:
+def start_engine (eng_name, eng_hash=False):
+	'''Engine set-up'''
+	new_engine = chess.uci.popen_engine(eng_name)
+	new_engine.uci()
 	
-	this_node = next_game.end()
-	
-	running_board = this_node.board()
+	if eng_hash:
 		
-	if (running_board.is_checkmate() or (running_board.is_stalemate())):
+		new_engine.setoption({"Hash":eng_hash})
 		
-		next_game = chess.pgn.read_game(pgnin)
-		continue
+	return new_engine
+
+
+def get_score(eng_score, white_to_move):
+	
+	if (eng_score.mate):
 		
-	print ("Analysing game ", i+1)
-	engine.position(running_board)
-	engine.go(depth=search_depth)
-	print ("Analysis complete."	)
+		if (white_to_move):
+		
+			white_score = 1000
+			
+		else:
+			
+			white_score = -1000
+			
+	else:
 	
-	dataout.write (str(engine_data.info)	)
+		if (white_to_move):
+			
+			white_score = int(eng_score.cp)
+			
+		else:
+			
+			white_score = int(-(eng_score.cp))
+			
+	return white_score
+
+
+def main():
+
+	engine = start_engine("stockfish6", 128)
+	engine_data = chess.uci.InfoHandler()
+	engine.info_handlers.append(engine_data)
 	
-	print ("Data written.")
-	
-	i += 1
 	next_game = chess.pgn.read_game(pgnin)
 	
-	print ("Back to top.")
+	i = 0
 	
-print (i, " boards printed.")
+	while next_game:
+		
+		this_node = next_game.end()
+		
+		running_board = this_node.board()
+		
+		if (running_board.is_checkmate()):
+			
+			print (str(next_game.headers["White"]), "V", str(next_game.headers["Black"]))
+			engine.position(running_board)
+			engine.go(depth=search_depth)
+			print (engine_data.info["score"][1])
+			
+			if running_board.turn:
+				
+				print ("White checkmates.")
+				print()
+				print()
+				
+			else:
+				
+				print ("Black checkmates.")
+				print()
+				print()
+				
+		elif (running_board.is_stalemate()):
+			
+			print (next_game.headers["White"], "V", next_game.headers["Black"])
+			engine.position(running_board)
+			engine.go(depth=search_depth)
+			print (engine_data.info["score"][1])
+			print ("Stalemate.")
+			print()
+			print()
+			
+		else:
+			
+			print (next_game.headers["White"], "V", next_game.headers["Black"])
+			print ("Analysing game ", i+1)
+			engine.position(running_board)
+			engine.go(depth=search_depth)
+			#print ("Analysis complete."	)
+			
+			#dataout.write (str(engine_data.info))
+			
+			pv_score = get_score(engine_data.info["score"][1], running_board.turn)
+			print (engine_data.info["score"][1])
+			print ("Score:", str(pv_score))
+			print ("Result:", next_game.headers["Result"])
+			print (pv_score - 20)
+			
+			if (pv_score > 20):
+				
+				print (pv_score, "< 20.")
+				next_game.headers["Result"] = "1-0"
+				print ("Result:", next_game.headers["Result"])
+				
+			else:
+				
+				print (pv_score, "< 20.")
+			
+			print()
+			print()
+			
+			
+		i += 1
+		next_game = chess.pgn.read_game(pgnin)
+		
+	print (i, " boards printed.")
+	
+	engine.quit()
+	pgnin.close()
+	pgnout.close()
 
-engine.quit()
-pgnin.close()
-pgnout.close()
 
-
+if __name__ == "__main__":
+	#main(sys.argv[1:])
+	main()
 
 
 
