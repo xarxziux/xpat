@@ -27,8 +27,12 @@ pgnin = open("pgn/gamesin.pgn", "r")
 pgnout = open("pgn/gamesout.pgn", "a")
 dataout = open("pgn/dataout.txt", "a")
 
+#Settings
+white_threshold = 70
+black_threshold = -50
+
 def start_engine (eng_name, eng_hash=False):
-	'''Engine set-up'''
+	'''Engine start-up'''
 	new_engine = chess.uci.popen_engine(eng_name)
 	new_engine.uci()
 	
@@ -66,7 +70,7 @@ def get_score(eng_score, white_to_move):
 
 def main():
 
-	engine = start_engine("stockfish6", 128)
+	engine = start_engine("stockfish6", 1024)
 	engine_data = chess.uci.InfoHandler()
 	engine.info_handlers.append(engine_data)
 	
@@ -76,69 +80,50 @@ def main():
 	
 	while next_game:
 		
-		this_node = next_game.end()
+		end_node = next_game.end()
+		running_board = end_node.board()
 		
-		running_board = this_node.board()
-		
-		if (running_board.is_checkmate()):
+		if not ((running_board.is_checkmate()) or (running_board.is_stalemate())):
 			
-			print (str(next_game.headers["White"]), "V", str(next_game.headers["Black"]))
-			engine.position(running_board)
-			engine.go(depth=search_depth)
-			print (engine_data.info["score"][1])
-			
-			if running_board.turn:
-				
-				print ("White checkmates.")
-				print()
-				print()
-				
-			else:
-				
-				print ("Black checkmates.")
-				print()
-				print()
-				
-		elif (running_board.is_stalemate()):
-			
-			print (next_game.headers["White"], "V", next_game.headers["Black"])
-			engine.position(running_board)
-			engine.go(depth=search_depth)
-			print (engine_data.info["score"][1])
-			print ("Stalemate.")
-			print()
-			print()
-			
-		else:
-			
-			print (next_game.headers["White"], "V", next_game.headers["Black"])
 			print ("Analysing game ", i+1)
 			engine.position(running_board)
 			engine.go(depth=search_depth)
-			#print ("Analysis complete."	)
-			
-			#dataout.write (str(engine_data.info))
+			print ("Analysis complete.")
+			print()
+			print()
 			
 			pv_score = get_score(engine_data.info["score"][1], running_board.turn)
-			print (engine_data.info["score"][1])
-			print ("Score:", str(pv_score))
-			print ("Result:", next_game.headers["Result"])
-			print (pv_score - 20)
+			end_node.parent.add_variation(end_node.move, starting_comment = (engine_name +
+					" " + str(engine_data.info["depth"]) + ": " + str(pv_score)))
+			end_node.parent.variation(1).add_variation (engine_data.info["pv"][1][0])
+			#end_node.add_variation (, starting_comment = (engine.name +
 			
-			if (pv_score > 20):
+			if ((pv_score >= white_threshold) and (next_game.headers["Result"] != '1-0')):
 				
-				print (pv_score, "< 20.")
 				next_game.headers["Result"] = "1-0"
-				print ("Result:", next_game.headers["Result"])
+				end_node.comment = end_node.comment + " - auto-adjusted to 1-0"
+				
+			elif ((pv_score <= black_threshold) and (next_game.headers["Result"] != '0-1')):
+				
+				next_game.headers["Result"] = "0-1"
+				end_node.comment = end_node.comment + " - auto-adjusted to 0-1"
+				
+			elif ((pv_score < white_threshold) and (pv_score > black_threshold) and (next_game.headers["Result"] != "1/2-1/2")):
+				
+				next_game.headers["Result"] = "1/2-1/2"
+				end_node.comment = end_node.comment + " - auto-adjusted to 1/2-1/2"
 				
 			else:
 				
-				print (pv_score, "< 20.")
-			
-			print()
-			print()
-			
-			
+				end_node.comment = end_node.comment + " - auto-adjudicator detects no result change necessary"
+				
+		#print ("Writing to output file.")
+		pgnout.write (str(next_game))
+		#print ("Written!")
+		#print()
+		#print()
+		pgnout.write ("\n\n")
+		
 		i += 1
 		next_game = chess.pgn.read_game(pgnin)
 		

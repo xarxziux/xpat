@@ -1,287 +1,281 @@
-[Event "CuteChess Position Test - Mirkowski B13 0+120"]
-[Site "?"]
-[Date "2015.11.20"]
-[Round "3"]
-[White "Gull 3 x64"]
-[Black "Alfil 15.7.23"]
+[Event "20th European Teams"]
+[Site "Reykjavik ISL"]
+[Date "2015.11.13"]
+[Round "1.1"]
+[White "Solak, D"]
+[Black "Svidler, P"]
 [Result "1/2-1/2"]
-[PlyCount "40"]
-[SetUp "1"]
-[Termination "adjudication"]
-[TimeControl "120/move"]
-[FEN "2rqk2r/pp3ppp/2n5/3p4/1bPNn3/2N1BP2/PP2Q1PP/2R1K2R b Kk - 0 1"]
+[WhiteElo "2628"]
+[BlackElo "2745"]
+[ECO "C69"]
+[EventDate "2015.11.13"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[Opening "Ruy Lopez"]
+[Variation "exchange variation, 5.O-O"]
+[WhiteTeam "Turkey"]
+[BlackTeam "Russia"]
+[WhiteFideId "916811"]
+[BlackFideId "4102142"]
 
-1. ... Nxc3 {-0.12/26 120s} 2. bxc3 {+0.03/21 120s} 2. ... Be7 {-0.12/28 
-120s} 3. Nf5 {+0.16/21 120s} 3. ... O-O {-0.18/28 120s} 4. Rd1 {+0.16/21 
-120s} 4. ... Re8 {-0.22/28 120s} 5. O-O {0.00/22 120s} 5. ... Bc5 {
--0.45/24 120s} 6. Qf2 {0.00/23 120s} 6. ... Rxe3 {-0.11/27 120s} 7. Nxe3 {
-0.00/23 120s} 7. ... f5 {-0.02/29 120s} 8. cxd5 {0.00/23 120s} 8. ... Na5 
-{-0.22/29 120s} 9. g3 {0.00/23 120s} 9. ... Nc4 {-0.07/29 120s} 10. Rfe1 {
-0.00/23 120s} 10. ... f4 {-0.10/28 120s} 11. gxf4 {+0.12/23 120s} 11. ... 
-Qf6 {0.00/29 120s} 12. Rd4 {0.00/24 120s} 12. ... Bxd4 {-0.20/28 120s} 13.
- cxd4 {0.00/24 120s} 13. ... Nd6 {0.00/27 120s} 14. Ng2 {0.00/25 120s} 
-14. ... Rc4 {0.00/28 120s} 15. Qe2 {0.00/24 120s} 15. ... Rxd4 {0.00/28 
-120s} 16. Qe5 {0.00/25 120s} 16. ... Rd2 {0.00/29 120s} 17. a4 {0.00/25 
-120s} 17. ... a5 {0.00/30 120s} 18. Rc1 {0.00/25 120s} 18. ... Qg6 {
-0.00/29 120s} 19. Qe6+ {0.00/26 120s} 19. ... Kf8 {0.00/29 120s} 20. Qxg6 
-{0.00/27 120s} 20. ... hxg6 {0.00/30 120s} 21. Rc7 {0.00/27 120s, Draw by 
-adjudication} 1/2-1/2
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Bxc6 dxc6 5. O-O Bd6 6. d4 exd4 7. Qxd4 
+f6 8. Be3 Ne7 9. Nbd2 Be6 10. Qc3 Qd7 11. Nc4 Bxc4 12. Qxc4 Ng6 13. Nd4 
+Ne5 14. Qb3 O-O-O 15. Nf5 Ng4 16. h3 Nxe3 17. Qxe3 Kb8 18. Rad1 Qf7 19. b3
+Rhe8 20. Rd3 Bf8 21. Rfd1 Rxd3 22. Qxd3 g6 23. Nd4 Bd6 24. Nf3 Re7 25. Re1
+Qe8 26. Kf1 a5 27. Qd4 Re6 28. Qc4 Re7 29. Qd4 Re6 30. Qc4 Re7 31. Qd4 
+1/2-1/2
 
-[Event "CuteChess Position Test - Mirkowski B13 0+120"]
-[Site "?"]
-[Date "2015.11.20"]
-[Round "3"]
-[White "Critter 1.6a 64-bit"]
-[Black "BlackMamba 2.0 x64"]
+[Event "20th European Teams"]
+[Site "Reykjavik ISL"]
+[Date "2015.11.13"]
+[Round "1.1"]
+[White "Tomashevsky, E"]
+[Black "Ipatov, Alexander"]
+[Result "1-0"]
+[WhiteElo "2743"]
+[BlackElo "2624"]
+[ECO "D52"]
+[EventDate "2015.11.13"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[Opening "QGD"]
+[Variation "Cambridge Springs defence, Yugoslav variation"]
+[WhiteTeam "Russia"]
+[BlackTeam "Turkey"]
+[WhiteFideId "4147235"]
+[BlackFideId "14116731"]
+
+1. c4 c6 2. Nf3 d5 3. d4 Nf6 4. Nc3 e6 5. Bg5 Nbd7 6. e3 Qa5 7. cxd5 Nxd5 
+8. Rc1 Nxc3 9. bxc3 Ba3 10. Rc2 b6 11. Be2 Ba6 12. O-O Bxe2 13. Rxe2 O-O 
+14. e4 Rfe8 15. Re3 Bf8 16. e5 Qxa2 17. Nd2 c5 18. Ne4 cxd4 19. cxd4 Rac8 
+20. Qg4 Rc4 21. Rf3 Rxd4 22. Qf4 Ra8 23. Qxf7+ Kh8 24. Bf6 Rxe4 25. Rg3 
+Nxf6 26. exf6 g6 27. Rh3 h6 28. Qxg6 Qd2 29. Qxe4 Rc8 30. Rd3 Qc2 31. Qxe6
+Qc6 32. Qg4 Rc7 33. Qg6 Qe6 34. Rd8 1-0
+
+[Event "20th European Teams"]
+[Site "Reykjavik ISL"]
+[Date "2015.11.13"]
+[Round "1.1"]
+[White "Yilmaz, M"]
+[Black "Nepomniachtchi, I"]
 [Result "1/2-1/2"]
-[PlyCount "40"]
-[SetUp "1"]
-[Termination "adjudication"]
-[TimeControl "120/move"]
-[FEN "2rqk2r/pp3ppp/2n5/3p4/1bPNn3/2N1BP2/PP2Q1PP/2R1K2R b Kk - 0 1"]
+[WhiteElo "2594"]
+[BlackElo "2705"]
+[ECO "D85"]
+[EventDate "2015.11.13"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[Opening "Gruenfeld"]
+[Variation "modern exchange variation"]
+[WhiteTeam "Turkey"]
+[BlackTeam "Russia"]
+[WhiteFideId "6302718"]
+[BlackFideId "4168119"]
 
-1. ... Nxc3 {-0.19/20 120s} 2. bxc3 {+0.28/22 120s} 2. ... Be7 {-0.34/23 
-120s} 3. Nf5 {+0.16/21 120s} 3. ... O-O {-0.27/23 120s} 4. Rd1 {+0.13/22 
-120s} 4. ... Re8 {-0.19/23 120s} 5. Rxd5 {+0.12/21 120s} 5. ... Qc7 {
--0.16/21 1.1s} 6. O-O {+0.02/22 120s} 6. ... Bf8 {-0.16/23 120s} 7. Qd2 {
-+0.03/23 120s} 7. ... Ne7 {-0.13/23 120s} 8. Rd7 {+0.02/23 120s} 8. ... 
-Qc6 {-0.07/22 0.31s} 9. Nxe7+ {+0.04/24 120s} 9. ... Rxe7 {-0.06/24 120s} 
-10. Rxe7 {+0.03/24 120s} 10. ... Bxe7 {-0.06/22 0.59s} 11. Qd5 {+0.01/24 
-120s} 11. ... Qc7 {0.00/24 120s} 12. Re1 {+0.01/23 120s} 12. ... Bf8 {
-0.00/25 120s} 13. Bd4 {0.00/24 120s} 13. ... b6 {0.00/25 120s} 14. Qb5 {
-0.00/24 120s} 14. ... Qxc4 {0.00/25 120s} 15. a4 {0.00/24 120s} 15. ... f6
-{0.00/25 120s} 16. Ra1 {0.00/23 120s} 16. ... h6 {+0.01/22 120s} 17. h3 {
-0.00/23 120s} 17. ... Bd6 {0.00/23 120s} 18. Qd7 {0.00/24 120s} 18. ... 
-Qc7 {+0.12/22 120s} 19. Qe6+ {0.00/24 120s} 19. ... Kh8 {0.00/25 120s} 20.
- a5 {-0.06/24 120s} 20. ... b5 {0.00/25 120s} 21. Kh1 {0.00/25 120s, Draw 
-by adjudication} 1/2-1/2
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Nf3 c5
+8. Be3 Qa5 9. Qd2 Nd7 10. Bd3 O-O 11. O-O e5 12. d5 Nf6 13. c4 Qc7 14. Qb2
+Ne8 15. Bd2 Bg4 16. Ne1 Nd6 17. f3 Bd7 18. a4 f5 19. Nc2 Rae8 20. a5 Qd8 
+21. Qa3 b6 22. axb6 axb6 23. Rab1 Qc7 24. Bc3 Rb8 25. Qa1 Rfe8 26. Rfe1 b5
+27. cxb5 c4 28. Bf1 fxe4 29. fxe4 Ra8 30. Qb2 Nxb5 31. Ne3 Nd6 32. Bb4 
+Nxe4 33. Bxc4 Kh8 34. Qc2 Nf6 35. Bd3 Qd8 36. d6 Rc8 37. Qd2 Qb6 38. Kh1 
+Qd4 39. Ba5 Qxd6 40. Nc4 Qd4 41. Bc3 Qf4 42. Bxe5 Qxd2 43. Nxd2 Ng4 44. 
+Bxg7+ Kxg7 45. Kg1 1/2-1/2
 
-[Event "CuteChess Position Test - Mirkowski B13 0+120"]
-[Site "?"]
-[Date "2015.11.20"]
-[Round "3"]
-[White "Gull 3 x64"]
-[Black "Firenzina 2.3.2 xTreme x64"]
+[Event "20th European Teams"]
+[Site "Reykjavik ISL"]
+[Date "2015.11.13"]
+[Round "1.1"]
+[White "Jakovenko, D"]
+[Black "Can, E"]
+[Result "1-0"]
+[WhiteElo "2735"]
+[BlackElo "2535"]
+[ECO "D30"]
+[EventDate "2015.11.13"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[Opening "Queen's gambit declined"]
+[WhiteTeam "Russia"]
+[BlackTeam "Turkey"]
+[WhiteFideId "4122356"]
+[BlackFideId "6302181"]
+
+1. d4 d5 2. c4 e6 3. Nf3 c6 4. e3 Bd6 5. Nc3 f5 6. Ne5 Nf6 7. Be2 O-O 8. 
+O-O b6 9. Rb1 Bb7 10. b4 Ne4 11. Nxe4 fxe4 12. f4 exf3 13. Nxf3 Nd7 14. c5
+Bc7 15. e4 a5 16. Ng5 Rxf1+ 17. Qxf1 Qe7 18. Bg4 Nf8 19. bxa5 Ba6 20. Qe1 
+bxc5 21. exd5 cxd5 22. Bxe6+ Nxe6 23. Qxe6+ Qxe6 24. Nxe6 Bxa5 25. Nxc5 
+Bc4 26. Bf4 Rf8 27. Bd6 Rf6 28. Be5 Rb6 29. Rxb6 Bxb6 30. a4 Kf7 31. Kf2 
+g5 32. g4 Ke7 33. Ke3 Bf1 34. Nb3 Bc4 35. Nd2 Ba6 36. Nf3 Bc8 37. h3 Bd7 
+38. Nxg5 h6 39. Nh7 Bxa4 40. Nf6 Ke6 41. Nh5 Kf7 42. Bg7 Kg6 43. Be5 Kg5 
+44. Nf4 Ba5 45. Nxd5 h5 46. Bf6+ Kg6 47. g5 Kf5 48. Ne7+ Ke6 49. d5+ Kf7 
+50. Nc6 Bc7 51. Kd4 h4 52. Kc5 Bg3 53. Nd8+ Kg6 54. Ne6 Kf7 55. Nd8+ Kg6 
+56. Nc6 Kf7 57. d6 Ke6 58. Nd4+ Kf7 59. Nf5 Be1 60. Ne7 Bd7 61. Be5 Bf2+ 
+62. Kd5 Be6+ 63. Ke4 Bxh3 64. g6+ Ke8 65. g7 Be6 66. g8=Q+ Bxg8 67. Nxg8 
+Kf7 68. Nh6+ Ke6 69. Nf5 1-0
+
+[Event "20th European Teams"]
+[Site "Reykjavik ISL"]
+[Date "2015.11.13"]
+[Round "1.2"]
+[White "Ivanchuk, V"]
+[Black "Lupulescu, C"]
+[Result "1-0"]
+[WhiteElo "2720"]
+[BlackElo "2631"]
+[ECO "D37"]
+[EventDate "2015.11.13"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[Opening "QGD"]
+[Variation "4.Nf3"]
+[WhiteTeam "Ukraine"]
+[BlackTeam "Romania"]
+[WhiteFideId "14100010"]
+[BlackFideId "1207822"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Qc2 O-O 6. cxd5 exd5 7. Bg5 h6 
+8. Bh4 Na6 9. e3 Nb4 10. Qb3 Bf5 11. Rc1 c5 12. dxc5 Qa5 13. Nd4 Nd3+ 14. 
+Bxd3 Bxd3 15. c6 Bc4 16. Qa4 Qc5 17. cxb7 Rab8 18. b3 Bd3 19. Kd2 Bg6 20. 
+Bxf6 Bxf6 21. Ne4 Qe7 22. Nc5 Be5 23. g3 Bd6 24. Nd7 Bb4+ 25. Ke2 Bh5+ 26.
+ Kf1 Bd2 27. Rc2 Rxb7 28. Nxf8 Rb4 29. Rc8 Qe4 30. Nfe6+ Kh7 31. Nf8+ Kg8 
+32. Ng6+ Kh7 33. Rh8+ Kxg6 34. Qc6+ f6 35. Qe8+ Qxe8 36. Rxe8 Bc3 37. Nc2 
+Re4 38. Rxe4 dxe4 39. Nd4 Bf3 40. Nxf3 exf3 41. g4 h5 42. gxh5+ Kxh5 43. 
+Rg1 g5 44. Rg3 g4 45. h3 1-0
+
+[Event "20th European Teams"]
+[Site "Reykjavik ISL"]
+[Date "2015.11.13"]
+[Round "1.2"]
+[White "Marin, Mi"]
+[Black "Kryvoruchko, Y"]
 [Result "1/2-1/2"]
-[PlyCount "40"]
-[SetUp "1"]
-[Termination "adjudication"]
-[TimeControl "120/move"]
-[FEN "2rqk2r/pp3ppp/2n5/3p4/1bPNn3/2N1BP2/PP2Q1PP/2R1K2R b Kk - 0 1"]
+[WhiteElo "2589"]
+[BlackElo "2717"]
+[ECO "A14"]
+[EventDate "2015.11.13"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[Opening "English"]
+[Variation "Neo-Catalan declined"]
+[WhiteTeam "Romania"]
+[BlackTeam "Ukraine"]
+[WhiteFideId "1200020"]
+[BlackFideId "14109182"]
 
-1. ... Nxc3 {-0.32/21 120s} 2. bxc3 {+0.03/21 120s} 2. ... Ba3 {-0.25/22 
-120s} 3. Rd1 {+0.34/20 120s} 3. ... Ne7 {-0.21/22 120s} 4. Nb5 {+0.14/20 
-120s} 4. ... Bc5 {-0.06/23 120s} 5. Nxa7 {+0.07/22 120s} 5. ... Bxa7 {
-0.00/24 120s} 6. Bxa7 {+0.08/23 120s} 6. ... O-O {0.00/25 120s} 7. O-O {
-+0.09/23 120s} 7. ... Rxc4 {0.00/24 120s} 8. Qb2 {+0.08/24 120s} 8. ... 
-Qd7 {0.00/24 120s} 9. Bd4 {+0.01/22 120s} 9. ... Rfc8 {0.00/23 120s} 10. 
-Rd3 {+0.03/22 120s} 10. ... h6 {0.00/22 120s} 11. Re1 {+0.07/22 120s} 
-11. ... b5 {+0.01/22 120s} 12. a3 {+0.03/22 120s} 12. ... h5 {0.00/23 120s
-} 13. h3 {+0.16/22 120s} 13. ... f6 {0.00/23 120s} 14. Rb1 {+0.21/23 120s}
-14. ... Rb8 {0.00/24 120s} 15. Bf2 {+0.16/22 120s} 15. ... Kf7 {0.00/23 
-120s} 16. Qb3 {+0.16/22 120s} 16. ... Qc6 {0.00/23 120s} 17. Ba7 {+0.04/21
-120s} 17. ... Ra8 {+0.07/23 120s} 18. Bd4 {-0.01/23 120s} 18. ... Ra5 {
-0.00/23 120s} 19. Re1 {+0.04/22 120s} 19. ... Rca4 {+0.19/24 120s} 20. Qc2
-{+0.07/22 120s} 20. ... Nf5 {+0.09/25 120s} 21. Bf2 {0.00/23 120s, Draw by
-adjudication} 1/2-1/2
+1. Nf3 Nf6 2. g3 d5 3. Bg2 e6 4. O-O Be7 5. c4 O-O 6. b3 b6 7. Bb2 Bb7 8. 
+e3 Nbd7 9. Nc3 Ne4 10. cxd5 Nxc3 11. dxc3 Bxd5 12. c4 Bb7 13. Ne5 Nxe5 14.
+ Bxb7 Rb8 15. Bxe5 Rxb7 16. Qg4 g6 17. Rad1 Qc8 18. Rd2 f6 19. Bc3 c6 20. 
+Rfd1 e5 21. Qxc8 Rxc8 22. g4 Kf7 23. Rd7 Rcc7 24. Rxc7 Rxc7 25. Kg2 Ke6 
+26. e4 b5 27. Ba5 Rd7 28. Rxd7 Kxd7 29. cxb5 cxb5 30. Bc3 Ke6 31. Kf3 Bc5 
+32. Ke2 a6 33. h3 Bd6 34. Kf3 Bc5 35. Ke2 Bd6 36. Kf3 Bc5 1/2-1/2
 
-[Event "CuteChess Position Test - Mirkowski B13 0+120"]
-[Site "?"]
-[Date "2015.11.20"]
-[Round "3"]
-[White "Strelka 5"]
-[Black "Komodo 6 64-bit"]
+[Event "20th European Teams"]
+[Site "Reykjavik ISL"]
+[Date "2015.11.13"]
+[Round "1.2"]
+[White "Korobov, A"]
+[Black "Deac, Bogdan-Daniel"]
+[Result "1-0"]
+[WhiteElo "2709"]
+[BlackElo "2440"]
+[ECO "D52"]
+[EventDate "2015.11.13"]
+[WhiteTitle "GM"]
+[BlackTitle "IM"]
+[Opening "QGD"]
+[Variation "Cambridge Springs defence, Bogoljubow variation"]
+[WhiteTeam "Ukraine"]
+[BlackTeam "Romania"]
+[WhiteFideId "14105730"]
+[BlackFideId "1226380"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 c6 5. Bg5 Nbd7 6. e3 Qa5 7. Nd2 Bb4 8.
+ Qc2 O-O 9. Be2 c5 10. Bf4 cxd4 11. exd4 dxc4 12. Nxc4 Qd8 13. a3 Bxc3+ 
+14. bxc3 Nb6 15. Ne5 Nbd5 16. Bg5 Qa5 17. Rc1 Nd7 18. O-O Nxe5 19. dxe5 h6
+20. Bh4 Nf4 21. Qe4 Nxe2+ 22. Qxe2 b6 23. Rfe1 Bb7 24. Qg4 Kh7 25. Re3 
+Qxa3 26. Rd1 Rac8 27. c4 Qa2 28. Rc3 Qb2 29. Qd4 Qb4 30. h3 Rg8 31. Qd3+ 
+Kh8 32. Rcc1 Qc5 33. Qe2 a6 34. Kh2 b5 35. f3 bxc4 36. Rd7 Rc7 37. Rxc7 
+Qxc7 38. Rxc4 Qd7 39. Qe3 Kh7 40. Rd4 Qc7 41. Qd3+ Kh8 42. Rd7 Qxe5+ 43. 
+Bg3 Qb2 44. Rxf7 Bd5 45. Qe3 Qc2 46. Be5 Qg6 47. Qa7 Kh7 48. Qc7 a5 49. 
+Rf4 h5 50. h4 a4 51. Rf6 Rc8 52. Qd7 Rd8 53. Qxd8 gxf6 54. Bxf6 Qg8 55. 
+Qc7+ Kg6 56. Bb2 Qf7 57. Qg3+ Kh7 58. Qe5 Kg6 59. Bd4 Qe7 60. Kg1 a3 61. 
+g4 hxg4 62. h5+ Kh6 63. Qh8+ Kg5 64. f4+ 1-0
+
+[Event "20th European Teams"]
+[Site "Reykjavik ISL"]
+[Date "2015.11.13"]
+[Round "1.2"]
+[White "Parligras, M"]
+[Black "Areshchenko, A"]
 [Result "1/2-1/2"]
-[PlyCount "40"]
-[SetUp "1"]
-[Termination "adjudication"]
-[TimeControl "120/move"]
-[FEN "2rqk2r/pp3ppp/2n5/3p4/1bPNn3/2N1BP2/PP2Q1PP/2R1K2R b Kk - 0 1"]
+[WhiteElo "2587"]
+[BlackElo "2682"]
+[ECO "D85"]
+[EventDate "2015.11.13"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[Opening "Gruenfeld"]
+[Variation "exchange variation"]
+[WhiteTeam "Romania"]
+[BlackTeam "Ukraine"]
+[WhiteFideId "1204297"]
+[BlackFideId "14109530"]
 
-1. ... Nxc3 {-0.30/23 120s} 2. bxc3 {+0.45/20 120s} 2. ... Be7 {-0.25/24 
-120s} 3. Nf5 {+0.86/21 120s} 3. ... O-O {-0.26/25 120s} 4. Rd1 {+0.51/21 
-120s} 4. ... Re8 {-0.27/24 120s} 5. Rxd5 {+0.37/21 120s} 5. ... Qc7 {
--0.12/27 120s} 6. O-O {+0.50/22 120s} 6. ... Bf8 {-0.12/25 120s} 7. Qd2 {
-+0.49/22 120s} 7. ... Ne5 {-0.12/26 120s} 8. Bd4 {+0.72/22 120s} 8. ... b6
-{-0.12/25 120s} 9. Rd1 {+0.50/20 120s} 9. ... Ng6 {-0.12/24 120s} 10. Ne3 
-{+0.64/20 120s} 10. ... Qc6 {-0.12/25 120s} 11. Qc2 {+0.53/20 120s} 
-11. ... Re6 {+0.03/23 120s} 12. Qf2 {+0.58/20 120s} 12. ... f6 {+0.12/24 
-120s} 13. f4 {+0.19/20 120s} 13. ... Re4 {+0.03/25 120s} 14. g3 {+0.24/22 
-120s} 14. ... Ne7 {+0.03/27 120s} 15. Rb5 {+0.17/22 120s} 15. ... Qe8 {
-+0.08/25 120s} 16. Qf3 {+0.07/21 120s} 16. ... Nc6 {+0.05/25 120s} 17. Kf2
-{+0.07/22 120s} 17. ... Na5 {-0.02/25 120s} 18. Rd5 {-0.12/21 120s} 
-18. ... Nxc4 {+0.07/26 120s} 19. Nxc4 {-0.01/21 120s} 19. ... Rxc4 {
-+0.09/26 120s} 20. Rd2 {+0.25/21 120s} 20. ... Rc8 {+0.12/26 120s} 21. Kg2
-{+0.01/22 120s, Draw by adjudication} 1/2-1/2
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Be3 c5
+8. Rc1 Qa5 9. Qd2 cxd4 10. cxd4 Qxd2+ 11. Bxd2 O-O 12. Nf3 Bg4 13. Be3 Rd8
+14. d5 Nd7 15. Nd4 Nb6 16. Nb5 Rac8 17. Rxc8 Rxc8 18. Be2 Bxe2 19. Kxe2 f5
+20. Nxa7 Rc2+ 21. Kf3 fxe4+ 22. Kxe4 Rc4+ 23. Kd3 Rc3+ 24. Ke4 Rc4+ 25. 
+Kd3 Rc3+ 26. Ke4 Rc4+ 1/2-1/2
 
-[Event "CuteChess Position Test - Mirkowski B13 0+120"]
-[Site "?"]
-[Date "2015.11.20"]
-[Round "3"]
-[White "Komodo 6 64-bit"]
-[Black "Stockfish 6 64 POPCNT"]
+[Event "20th European Teams"]
+[Site "Reykjavik ISL"]
+[Date "2015.11.13"]
+[Round "1.3"]
+[White "Beliavsky, A"]
+[Black "Radjabov, T"]
 [Result "1/2-1/2"]
-[PlyCount "40"]
-[SetUp "1"]
-[Termination "adjudication"]
-[TimeControl "120/move"]
-[FEN "2rqk2r/pp3ppp/2n5/3p4/1bPNn3/2N1BP2/PP2Q1PP/2R1K2R b Kk - 0 1"]
+[WhiteElo "2622"]
+[BlackElo "2739"]
+[ECO "D85"]
+[EventDate "2015.11.13"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[Opening "Gruenfeld"]
+[Variation "exchange variation"]
+[WhiteTeam "Slovenia"]
+[BlackTeam "Azerbaijan"]
+[WhiteFideId "14602377"]
+[BlackFideId "13400924"]
 
-1. ... Nxc3 {-0.18/29 120s} 2. bxc3 {+0.13/24 120s} 2. ... Be7 {-0.16/29 
-120s} 3. Nf5 {+0.27/24 120s} 3. ... O-O {-0.03/30 120s} 4. Rd1 {+0.26/24 
-120s} 4. ... Re8 {-0.06/30 120s} 5. Rxd5 {+0.10/24 120s} 5. ... Qc7 {
--0.03/32 120s} 6. O-O {+0.10/24 120s} 6. ... Bf8 {0.00/31 120s} 7. Qd2 {
-+0.13/25 120s} 7. ... Ne5 {-0.06/31 120s} 8. Bd4 {+0.03/24 120s} 8. ... 
-Ng6 {-0.13/29 120s} 9. Ne3 {+0.17/23 120s} 9. ... Nf4 {-0.13/28 120s} 10. 
-Rb5 {+0.15/22 120s} 10. ... b6 {-0.17/30 120s} 11. Re1 {+0.16/22 120s} 
-11. ... Ne6 {0.00/29 120s} 12. g3 {+0.17/23 120s} 12. ... Nc5 {-0.06/28 
-120s} 13. Kg2 {+0.05/21 120s} 13. ... Qc6 {-0.06/31 120s} 14. Re2 {
-+0.13/23 120s} 14. ... h6 {0.00/33 120s} 15. Qd1 {+0.07/21 120s} 15. ... 
-Nb7 {0.00/36 120s} 16. Qd3 {0.00/25 120s} 16. ... Nd6 {0.00/38 120s} 17. 
-Rb4 {-0.02/24 120s} 17. ... Re6 {+0.06/33 120s} 18. h3 {-0.03/24 120s} 
-18. ... h5 {0.00/32 120s} 19. g4 {-0.12/23 120s} 19. ... Nb7 {0.00/32 120s
-} 20. Rbb2 {-0.12/24 120s} 20. ... hxg4 {0.00/33 120s} 21. hxg4 {-0.07/26 
-120s, Draw by adjudication} 1/2-1/2
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. g3 Bg7 6. Bg2 Nxc3 7. bxc3 c5
+8. Nf3 cxd4 9. cxd4 Nc6 10. O-O Nxd4 11. Nxd4 Qxd4 12. Rb1 O-O 13. Qxd4 
+Bxd4 14. Bh6 Rd8 15. Bxb7 Rb8 16. Bxc8 Rbxc8 17. Rb7 Bc5 18. Rc1 f6 19. 
+Be3 Bxe3 20. Rxc8 Rxc8 21. fxe3 Rc2 22. Rxa7 Rxe2 23. Rxe7 Rxa2 24. h4 h5 
+25. Kf1 Kf8 26. Rb7 Kg8 27. Re7 Kf8 28. Rb7 Kg8 29. Re7 1/2-1/2
 
-[Event "CuteChess Position Test - Mirkowski B13 0+120"]
-[Site "?"]
-[Date "2015.11.20"]
-[Round "3"]
-[White "Houdini 1.5a x64"]
-[Black "Stockfish 6 64 POPCNT"]
-[Result "1/2-1/2"]
-[PlyCount "40"]
-[SetUp "1"]
-[Termination "adjudication"]
-[TimeControl "120/move"]
-[FEN "2rqk2r/pp3ppp/2n5/3p4/1bPNn3/2N1BP2/PP2Q1PP/2R1K2R b Kk - 0 1"]
+[Event "20th European Teams"]
+[Site "Reykjavik ISL"]
+[Date "2015.11.13"]
+[Round "1.3"]
+[White "Naiditsch, A"]
+[Black "Lenic, L"]
+[Result "1-0"]
+[WhiteElo "2689"]
+[BlackElo "2625"]
+[ECO "C84"]
+[EventDate "2015.11.13"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[Opening "Ruy Lopez"]
+[Variation "closed defence"]
+[WhiteTeam "Azerbaijan"]
+[BlackTeam "Slovenia"]
+[WhiteFideId "4650891"]
+[BlackFideId "14603853"]
 
-1. ... Nxc3 {-0.18/29 120s} 2. bxc3 {+0.20/21 120s} 2. ... Be7 {-0.10/30 
-120s} 3. Nf5 {+0.17/22 120s} 3. ... O-O {-0.12/31 120s} 4. Rd1 {+0.16/22 
-120s} 4. ... Re8 {-0.15/30 120s} 5. Rxd5 {+0.11/21 120s} 5. ... Qc7 {
--0.06/33 120s} 6. O-O {+0.11/22 120s} 6. ... Bf8 {0.00/33 120s} 7. Qd2 {
-+0.06/22 120s} 7. ... Ne5 {-0.06/32 120s} 8. Bd4 {+0.09/22 120s} 8. ... b6
-{-0.08/31 120s} 9. Re1 {+0.11/21 120s} 9. ... Ng6 {-0.13/30 120s} 10. Rxe8
-{+0.14/23 120s} 10. ... Rxe8 {-0.17/34 120s} 11. Ne3 {+0.12/23 120s} 
-11. ... Nf4 {-0.18/31 120s} 12. Rb5 {+0.13/23 120s} 12. ... Ne6 {-0.18/30 
-120s} 13. g3 {+0.14/22 120s} 13. ... Qc6 {-0.06/30 120s} 14. Kg2 {+0.11/22
-120s} 14. ... g6 {-0.18/30 120s} 15. Qd3 {+0.22/23 120s} 15. ... Nc5 {
--0.23/31 120s} 16. Qc2 {+0.14/24 120s} 16. ... Ne6 {-0.20/31 120s} 17. Qd3
-{+0.14/23 120s} 17. ... Nc5 {0.00/49 120s} 18. Qf1 {+0.10/24 120s} 18. ...
- Ne6 {-0.06/32 120s} 19. Nd5 {+0.08/24 120s} 19. ... Rc8 {0.00/37 120s} 
-20. Be5 {+0.07/23 120s} 20. ... Qxc4 {0.00/39 120s} 21. Qxc4 {+0.05/22 
-120s, Draw by adjudication} 1/2-1/2
-
-[Event "CuteChess Position Test - Mirkowski B13 0+120"]
-[Site "?"]
-[Date "2015.11.20"]
-[Round "3"]
-[White "Houdini 1.5a x64"]
-[Black "Naum 4.6"]
-[Result "1/2-1/2"]
-[PlyCount "40"]
-[SetUp "1"]
-[Termination "adjudication"]
-[TimeControl "120/move"]
-[FEN "2rqk2r/pp3ppp/2n5/3p4/1bPNn3/2N1BP2/PP2Q1PP/2R1K2R b Kk - 0 1"]
-
-1. ... Nf6 {-0.43/18 120s} 2. Bg5+ {+0.42/20 120s} 2. ... Kf8 {-0.35/20 
-120s} 3. Nxc6 {+0.41/22 120s} 3. ... Rxc6 {-0.42/21 120s} 4. O-O {+0.38/22
-120s} 4. ... dxc4 {-0.44/21 120s} 5. Rfd1 {+0.38/22 120s} 5. ... Qe7 {
--0.45/21 120s} 6. Ne4 {+0.47/23 120s} 6. ... h6 {-0.54/21 120s} 7. Bxf6 {
-+0.45/24 120s} 7. ... gxf6 {-0.56/23 120s} 8. Rxc4 {+0.43/24 120s} 8. ... 
-f5 {-0.56/23 120s} 9. Rxc6 {+0.42/25 120s} 9. ... bxc6 {-0.54/24 120s} 10.
- Ng3 {+0.39/26 120s} 10. ... f4 {-0.52/24 120s} 11. Qxe7+ {+0.34/25 120s} 
-11. ... Kxe7 {-0.49/26 120s} 12. Nf5+ {+0.28/26 120s} 12. ... Kf6 {
--0.18/25 120s} 13. Nd6 {+0.24/25 120s} 13. ... Rb8 {-0.24/26 120s} 14. b3 
-{+0.25/25 120s} 14. ... Rd8 {-0.24/26 120s} 15. Ne4+ {+0.37/29 120s} 
-15. ... Ke7 {-0.23/30 120s} 16. Rxd8 {+0.37/28 120s} 16. ... Kxd8 {
--0.20/33 120s} 17. Kf1 {+0.32/28 120s} 17. ... Kd7 {-0.17/32 120s} 18. Ke2
-{+0.31/27 120s} 18. ... f5 {-0.16/33 120s} 19. Nf2 {+0.32/28 120s} 19. ...
- Ke6 {-0.16/33 120s} 20. Nd3 {+0.31/27 120s} 20. ... Bd6 {-0.16/34 120s} 
-21. Kd2 {+0.26/27 120s, Draw by adjudication} 1/2-1/2
-
-[Event "CuteChess Position Test - Mirkowski B13 0+120"]
-[Site "?"]
-[Date "2015.11.20"]
-[Round "3"]
-[White "Stockfish 6 64 POPCNT"]
-[Black "Komodo 6 64-bit"]
-[Result "1/2-1/2"]
-[PlyCount "40"]
-[SetUp "1"]
-[Termination "adjudication"]
-[TimeControl "120/move"]
-[FEN "2rqk2r/pp3ppp/2n5/3p4/1bPNn3/2N1BP2/PP2Q1PP/2R1K2R b Kk - 0 1"]
-
-1. ... Nxc3 {-0.40/22 120s} 2. bxc3 {+0.17/30 120s} 2. ... Be7 {-0.12/25 
-120s} 3. Nf5 {+0.38/29 120s} 3. ... O-O {-0.16/25 120s} 4. Rd1 {+0.08/30 
-120s} 4. ... Re8 {-0.12/24 120s} 5. O-O {+0.12/30 120s} 5. ... Bc5 {
--0.12/27 120s} 6. Qf2 {0.00/33 120s} 6. ... Rxe3 {+0.03/26 120s} 7. Nxe3 {
-0.00/35 120s} 7. ... Qb6 {-0.01/27 120s} 8. Rfe1 {0.00/36 120s} 8. ... Ne7
-{-0.04/27 120s} 9. Rb1 {0.00/35 120s} 9. ... Qc7 {+0.03/27 120s} 10. Kh1 {
-0.00/35 120s} 10. ... Nf5 {0.00/28 120s} 11. cxd5 {0.00/37 120s} 11. ... 
-Nxe3 {-0.01/27 120s} 12. Rxe3 {0.00/39 120s} 12. ... Bxe3 {-0.02/28 120s} 
-13. Qxe3 {0.00/38 120s} 13. ... Qxc3 {-0.05/28 120s} 14. Qxa7 {0.00/38 
-120s} 14. ... Qd2 {-0.03/29 120s} 15. d6 {0.00/38 120s} 15. ... g6 {
--0.06/27 120s} 16. Rg1 {0.00/40 120s} 16. ... Qd5 {-0.01/28 120s} 17. Qb6 
-{0.00/40 120s} 17. ... Rc2 {-0.01/29 120s} 18. a4 {0.00/41 120s} 18. ... 
-Ra2 {-0.02/29 120s} 19. a5 {0.00/41 120s} 19. ... Rd2 {-0.05/28 120s} 20. 
-h3 {0.00/42 120s} 20. ... Kg7 {-0.01/29 120s} 21. Re1 {0.00/45 120s, Draw 
-by adjudication} 1/2-1/2
-
-[Event "CuteChess Position Test - Mirkowski B13 0+120"]
-[Site "?"]
-[Date "2015.11.20"]
-[Round "3"]
-[White "Stockfish 6 64 POPCNT"]
-[Black "Houdini 1.5a x64"]
-[Result "1/2-1/2"]
-[PlyCount "40"]
-[SetUp "1"]
-[Termination "adjudication"]
-[TimeControl "120/move"]
-[FEN "2rqk2r/pp3ppp/2n5/3p4/1bPNn3/2N1BP2/PP2Q1PP/2R1K2R b Kk - 0 1"]
-
-1. ... Nxc3 {-0.21/21 120s} 2. bxc3 {+0.17/30 120s} 2. ... Be7 {-0.19/22 
-120s} 3. Nf5 {+0.08/30 120s} 3. ... O-O {-0.17/22 120s} 4. Rd1 {0.00/31 
-120s} 4. ... Re8 {-0.21/22 120s} 5. Rxd5 {+0.12/31 120s} 5. ... Qc7 {
--0.11/23 120s} 6. O-O {+0.03/30 120s} 6. ... Bf8 {-0.07/22 120s} 7. Qd2 {
-0.00/32 120s} 7. ... Ne7 {-0.07/24 120s} 8. Rd7 {+0.13/31 120s} 8. ... Qc6
-{-0.02/24 120s} 9. Nxe7+ {+0.09/33 120s} 9. ... Rxe7 {0.00/25 120s} 10. 
-Rxe7 {+0.03/33 120s} 10. ... Bxe7 {0.00/25 120s} 11. Qd5 {+0.06/33 120s} 
-11. ... b6 {0.00/25 120s} 12. Qxc6 {+0.12/34 120s} 12. ... Rxc6 {0.00/29 
-120s} 13. Rd1 {+0.13/35 120s} 13. ... Rxc4 {0.00/28 120s} 14. Rd7 {0.00/35
-120s} 14. ... Bf8 {0.00/28 120s} 15. Rxa7 {0.00/38 120s} 15. ... Rxc3 {
-0.00/26 120s} 16. Bxb6 {0.00/38 120s} 16. ... Rc6 {0.00/29 120s} 17. Be3 {
-0.00/53 120s} 17. ... Rc3 {0.00/29 120s} 18. Bd4 {0.00/55 120s} 18. ... 
-Rc4 {0.00/29 120s} 19. Be3 {0.00/60 120s} 19. ... Rc3 {0.00/30 120s} 20. 
-Bd4 {0.00/58 120s} 20. ... Rc4 {0.00/29 120s} 21. Be3 {0.00/60 120s, Draw 
-by adjudication} 1/2-1/2
-
-[Event "CuteChess Position Test - Mirkowski B13 0+120"]
-[Site "?"]
-[Date "2015.11.20"]
-[Round "3"]
-[White "Naum 4.6"]
-[Black "Houdini 1.5a x64"]
-[Result "0-1"]
-[PlyCount "33"]
-[SetUp "1"]
-[Termination "time forfeit"]
-[TimeControl "120/move"]
-[FEN "2rqk2r/pp3ppp/2n5/3p4/1bPNn3/2N1BP2/PP2Q1PP/2R1K2R b Kk - 0 1"]
-
-1. ... Nxc3 {-0.21/21 120s} 2. bxc3 {+0.46/20 120s} 2. ... Be7 {-0.20/22 
-120s} 3. Nf5 {+0.41/21 120s} 3. ... O-O {-0.12/22 120s} 4. Rd1 {+0.34/21 
-120s} 4. ... Re8 {-0.27/21 120s} 5. Rxd5 {+0.25/19 120s} 5. ... Qc7 {
--0.09/23 120s} 6. O-O {+0.29/20 120s} 6. ... Bf8 {-0.07/23 120s} 7. Qd2 {
-+0.31/21 120s} 7. ... Ne7 {-0.05/23 120s} 8. Rd7 {+0.19/21 120s} 8. ... 
-Qc6 {-0.03/25 120s} 9. Nxe7+ {+0.24/22 120s} 9. ... Rxe7 {-0.02/24 120s} 
-10. Rxe7 {+0.18/23 120s} 10. ... Bxe7 {-0.01/24 120s} 11. Qd5 {+0.20/24 
-120s} 11. ... b6 {0.00/26 120s} 12. Rd1 {+0.30/22 120s} 12. ... Qxc4 {
-0.00/27 120s} 13. Qxc4 {+0.04/24 120s} 13. ... Rxc4 {0.00/28 120s} 14. Rd7
-{0.00/26 120s} 14. ... Bf8 {0.00/28 120s} 15. Rxa7 {+0.03/27 120s} 15. ...
- Rxc3 {0.00/28 120s} 16. Kf2 {+0.04/27 120s} 16. ... Rc2+ {0.00/26 120s} 
-17. Kg3 {+0.03/26 120s} 17. ... b5 {0.00/25 120s, White loses on time} 0-1
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. d3 d6 7. c3 O-O 8. 
+Re1 Re8 9. Nbd2 Bf8 10. h3 b5 11. Bc2 h6 12. a4 b4 13. a5 Rb8 14. Nc4 Bd7 
+15. Bd2 bxc3 16. bxc3 Qc8 17. Nh2 Be6 18. Ba4 Qb7 19. Ng4 Nxg4 20. hxg4 
+Red8 21. Bc2 d5 22. exd5 Bxd5 23. Ne3 Bb3 24. Rb1 Bxc2 25. Qxc2 Qa8 26. 
+Rxb8 Qxb8 27. Nf5 Qc8 28. Qa4 Qd7 29. Re3 Bc5 1-0
 
