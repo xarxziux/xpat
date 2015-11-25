@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python3.5
 
 #Copyright 2015 Alan Delaney
 
@@ -15,16 +15,24 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import chess, chess.pgn, chess.uci
+import chess
+import chess.pgn
+import chess.uci
 
 #Engine settings
-engine_name = "stockfish6"
-search_depth = 10
+#engine_name = "./stockfish6"
+engine_name = "/usr/local/blackrebel/engines/stockfish-6-linux/Linux/stockfish_6_x\64"
+search_depth = 30
 hash_size = 1024
 
 #PGN files
-pgnin = open("pgn/gamesin.pgn", "r")
-pgnout = open("pgn/gamesout.pgn", "a")
+#pgnin = open("pgn/gamesin.pgn", "r")
+#pgnout = open("pgn/gamesout.pgn", "a")
+pgnin = open("pgn/ptests1.pgn", "r")
+pgnout = open("pgn/ptests1out.pgn", "a")
+#pgnin = open("pgn/qtest.pgn", "r")
+#pgnout = open("pgn/qtestout.pgn", "a")
+
 dataout = open("pgn/dataout.txt", "a")
 
 #Settings
@@ -33,7 +41,8 @@ black_threshold = -50
 
 def start_engine (eng_name, eng_hash=False):
 	'''Engine start-up'''
-	new_engine = chess.uci.popen_engine(eng_name)
+	#new_engine = chess.uci.popen_engine(eng_name)
+	new_engine = chess.uci.popen_engine("./stockfish6")
 	new_engine.uci()
 	
 	if eng_hash:
@@ -49,28 +58,28 @@ def get_score(eng_score, white_to_move):
 		
 		if (white_to_move):
 		
-			white_score = 1000
+			white_score = 10
 			
 		else:
 			
-			white_score = -1000
+			white_score = -10
 			
 	else:
 	
 		if (white_to_move):
 			
-			white_score = int(eng_score.cp)
+			white_score = (int(eng_score.cp))/100
 			
 		else:
 			
-			white_score = int(-(eng_score.cp))
+			white_score = (int(-(eng_score.cp)))/100
 			
 	return white_score
 
 
 def main():
 
-	engine = start_engine("stockfish6", 1024)
+	engine = start_engine("engine_name", 1024)
 	engine_data = chess.uci.InfoHandler()
 	engine.info_handlers.append(engine_data)
 	
@@ -93,7 +102,7 @@ def main():
 			print()
 			
 			pv_score = get_score(engine_data.info["score"][1], running_board.turn)
-			end_node.parent.add_variation(end_node.move, starting_comment = (engine_name +
+			end_node.parent.add_variation(end_node.move, starting_comment = (engine.name +
 					" " + str(engine_data.info["depth"]) + ": " + str(pv_score)))
 			end_node.parent.variation(1).add_variation (engine_data.info["pv"][1][0])
 			#end_node.add_variation (, starting_comment = (engine.name +
