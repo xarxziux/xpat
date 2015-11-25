@@ -20,81 +20,104 @@ import chess, chess.pgn, chess.uci
 #Engine settings
 engine_name = "stockfish6"
 pv_max = 5
-search_depth = 5
+search_depth = 10
 hash_size = 128
 
+
 #PGN files
-pgnin = open("pgn/gamesin.pgn", "r")
+pgnin = open("pgn/twicsample.pgn", "r")
 pgnout = open("pgn/gamesout.pgn", "a")
 
-#Engine set-up
-engine = chess.uci.popen_engine(engine_name)
-engine.uci()
-engine.setoption({"Hash":hash_size})
-engine.setoption({"MultiPV":pv_max})
-engine_data = chess.uci.InfoHandler()
-engine.info_handlers.append(engine_data)
 
-next_game = chess.pgn.read_game(pgnin)
-
-i = 0
-
-while next_game:
+def get_score(eng_score, white_to_move):
 	
-	print ("Analysing game ", i+1)
-	this_node = next_game
-	
-	while this_node.variations:
+	if (eng_score.mate):
 		
-		last_node = this_node.end()
-		running_board = last_node.board()
+		if (white_to_move):
 		
-		if (running_board.is_checkmate() or (running_board.is_stalemate())):
-			
-			c
+			white_score = 10
 			
 		else:
+			
+			white_score = -10
+			
+	else:
+	
+		if (white_to_move):
+			
+			white_score = (int(eng_score.cp))/100
+			
+		else:
+			
+			white_score = (int(-(eng_score.cp)))/100
+			
+	return white_score
+
+
+def main():
+	
+	#Engine set-up
+	engine = chess.uci.popen_engine(engine_name)
+	engine.uci()
+	engine.setoption({"Hash":hash_size})
+	engine.setoption({"MultiPV":pv_max})
+	engine_data = chess.uci.InfoHandler()
+	engine.info_handlers.append(engine_data)
+	
+	next_game = chess.pgn.read_game(pgnin)
+	
+	i = 0
+	
+	while next_game:
 		
+		print ("Analysing game ", i+1)
+		this_node = next_game.end().parent
+		
+		while this_node:
+			
+			#last_node = this_node.end()
+			running_board = this_node.board()
+			
+			#if (running_board.is_checkmate() or (running_board.is_stalemate())):
+			#	
+			#	pass
+			#	
+			#else:
+			
 			engine.position(running_board)
 			engine.go(depth=search_depth)
 			
 			for j in engine_data.info["pv"]:
 				
 				pvmove = engine_data.info["pv"][j][0]
-				pvscore = (engine_data.info["score"][j].cp)/100
-				
-				if not running_board.turn:
-					
-					if pvscore == None:
-						
-						print (engine_data.info["score"])
-						
-					else:
-						
-						pvscore = -pvscore
-						
-				#print (engine_data.info["score"])
+				pvscore = get_score (engine_data.info["score"][j], running_board.turn)
 				this_node.add_variation (pvmove,starting_comment = str(pvscore))
 				
 			print (".", end = "", flush=True)
-			break
-			this_node = this_node.variation(0)
+			#break
+			#Analyse forwards
+			#this_node = this_node.variation(0)
+			#Analyse backwards
+			this_node = this_node.parent
 			
 		print()
 		
 		pgnout.write(str(next_game))
 		pgnout.write("\n\n")
 		
-	i += 1
-	next_game = chess.pgn.read_game(pgnin)
+		i += 1
+		next_game = chess.pgn.read_game(pgnin)
+		
+	print (i, " boards printed.")
 	
-print (i, " boards printed.")
-
-engine.quit()
-pgnin.close()
-pgnout.close()
+	engine.quit()
+	pgnin.close()
+	pgnout.close()
 
 
+if __name__ == "__main__":
+	#main(sys.argv[1:])
+	main()
 
 
 
