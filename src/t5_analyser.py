@@ -22,10 +22,10 @@ engine_name = "stockfish6"
 pv_max = 5
 search_depth = 10
 hash_size = 128
-
+thread_count = 1
 
 #PGN files
-pgnin = open("pgn/twicsample.pgn", "r")
+pgnin = open("pgn/gamesin.pgn", "r")
 pgnout = open("pgn/gamesout.pgn", "a")
 
 
@@ -35,32 +35,66 @@ def get_score(eng_score, white_to_move):
 		
 		if (white_to_move):
 		
-			white_score = 10
+			white_score = 1000
 			
 		else:
 			
-			white_score = -10
+			white_score = -1000
 			
 	else:
 	
 		if (white_to_move):
 			
-			white_score = (int(eng_score.cp))/100
+			white_score = (int(eng_score.cp))
 			
 		else:
 			
-			white_score = (int(-(eng_score.cp)))/100
+			white_score = (int(-(eng_score.cp)))
 			
+		if (white_score > 1000):
+			
+			white_score = 1000
+			
+		if (white_score < -1000):
+			
+			white_score = -1000
+			
+		
 	return white_score
+
+
+def init_engine (eng_settings):
+	'''Engine start-up'''
+	
+	new_engine = chess.uci.popen_engine(eng_settings['name'])
+	new_engine.uci()
+	
+	if 'hash' in eng_settings:
+		
+		new_engine.setoption({"Hash":eng_settings['hash']})
+		
+	if 'threads' in eng_settings:
+		
+		new_engine.setoption({"Threads":eng_settings['threads']})
+		
+	if 'multipv' in eng_settings:
+		
+		new_engine.setoption({"MultiPV":eng_settings['multipv']})
+		
+	else:
+		
+		new_engine.setoption({"MultiPV":5})
+		
+	return new_engine
 
 
 def main():
 	
 	#Engine set-up
-	engine = chess.uci.popen_engine(engine_name)
-	engine.uci()
-	engine.setoption({"Hash":hash_size})
-	engine.setoption({"MultiPV":pv_max})
+	user_eng_settings = {'name' : engine_name, 'hash' : hash_size, 'multipv' :
+			pv_max, 'threads' : thread_count}
+	engine = init_engine (user_eng_settings
+	)
 	engine_data = chess.uci.InfoHandler()
 	engine.info_handlers.append(engine_data)
 	
@@ -90,14 +124,10 @@ def main():
 			for j in engine_data.info["pv"]:
 				
 				pvmove = engine_data.info["pv"][j][0]
-				pvscore = get_score (engine_data.info["score"][j], running_board.turn)
+				pvscore = (get_score (engine_data.info["score"][j], running_board.turn))/100
 				this_node.add_variation (pvmove,starting_comment = str(pvscore))
 				
 			print (".", end = "", flush=True)
-			#break
-			#Analyse forwards
-			#this_node = this_node.variation(0)
-			#Analyse backwards
 			this_node = this_node.parent
 			
 		print()
