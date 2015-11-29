@@ -20,16 +20,16 @@ import chess.pgn
 import chess.uci
 
 #Engine settings
-#engine_name = "./stockfish6"
-engine_name = "/usr/local/blackrebel/engines/stockfish-6-linux/Linux/stockfish_6_x\64"
+engine_name = "./stockfish6"
+#engine_name = "/usr/local/blackrebel/engines/stockfish-6-linux/Linux/stockfish_6_x\64"
 search_depth = 30
 hash_size = 1024
 
 #PGN files
-#pgnin = open("pgn/gamesin.pgn", "r")
-#pgnout = open("pgn/gamesout.pgn", "a")
-pgnin = open("pgn/ptests1.pgn", "r")
-pgnout = open("pgn/ptests1out.pgn", "a")
+pgnin = open("pgn/gamesin.pgn", "r")
+pgnout = open("pgn/gamesout.pgn", "a")
+#pgnin = open("pgn/ptests.pgn", "r")
+#pgnout = open("pgn/ptestsout.pgn", "a")
 #pgnin = open("pgn/qtest.pgn", "r")
 #pgnout = open("pgn/qtestout.pgn", "a")
 
