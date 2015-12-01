@@ -1,0 +1,1 @@
+This is the place to put the PGN file to be analysed.  At present (version 0.0.2, 01-Dec-2015), the script defaults to the file "gamesin.pgn" and appends the results to "gamesout.pgn."  The only way to change this is to modify the source code.

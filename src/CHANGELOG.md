@@ -2,7 +2,9 @@
 
 ###[unreleased] 2015-12-01
 ### Added
- - Polyglot book functionality 
+ - Engine and search depth info added to end of game
+   
+ - Polyglot book functionality added
 
 ### Changed
  - Placed pgn output inside a "with" block instead of keeping it open all the time
