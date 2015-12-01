@@ -1,6 +1,13 @@
 # Change log
 
+###[unreleased] 2015-12-01
+### Added
+ - Polyglot book functionality 
 
+### Changed
+ - Placed pgn output inside a "with" block instead of keeping it open all the time
+   
+ - Minor code clean-ups
 
 ###[unreleased] 2015-11-25
 ### Added

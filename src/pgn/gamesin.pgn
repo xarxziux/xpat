@@ -1,9 +1,281 @@
-[Event "?"]
-[Site "?"]
-[Date "????.??.??"]
-[Round "?"]
-[White "?"]
-[Black "?"]
-[Result "*"]
+[Event "20th European Teams"]
+[Site "Reykjavik ISL"]
+[Date "2015.11.13"]
+[Round "1.1"]
+[White "Solak, D"]
+[Black "Svidler, P"]
+[Result "1/2-1/2"]
+[WhiteElo "2628"]
+[BlackElo "2745"]
+[ECO "C69"]
+[EventDate "2015.11.13"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[Opening "Ruy Lopez"]
+[Variation "exchange variation, 5.O-O"]
+[WhiteTeam "Turkey"]
+[BlackTeam "Russia"]
+[WhiteFideId "916811"]
+[BlackFideId "4102142"]
 
-1.e4 e5 2.Bc4 Bc5 3.Qh5 Nf6 4.Qxf7# *
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Bxc6 dxc6 5. O-O Bd6 6. d4 exd4 7. Qxd4 
+f6 8. Be3 Ne7 9. Nbd2 Be6 10. Qc3 Qd7 11. Nc4 Bxc4 12. Qxc4 Ng6 13. Nd4 
+Ne5 14. Qb3 O-O-O 15. Nf5 Ng4 16. h3 Nxe3 17. Qxe3 Kb8 18. Rad1 Qf7 19. b3
+Rhe8 20. Rd3 Bf8 21. Rfd1 Rxd3 22. Qxd3 g6 23. Nd4 Bd6 24. Nf3 Re7 25. Re1
+Qe8 26. Kf1 a5 27. Qd4 Re6 28. Qc4 Re7 29. Qd4 Re6 30. Qc4 Re7 31. Qd4 
+1/2-1/2
+
+[Event "20th European Teams"]
+[Site "Reykjavik ISL"]
+[Date "2015.11.13"]
+[Round "1.1"]
+[White "Tomashevsky, E"]
+[Black "Ipatov, Alexander"]
+[Result "1-0"]
+[WhiteElo "2743"]
+[BlackElo "2624"]
+[ECO "D52"]
+[EventDate "2015.11.13"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[Opening "QGD"]
+[Variation "Cambridge Springs defence, Yugoslav variation"]
+[WhiteTeam "Russia"]
+[BlackTeam "Turkey"]
+[WhiteFideId "4147235"]
+[BlackFideId "14116731"]
+
+1. c4 c6 2. Nf3 d5 3. d4 Nf6 4. Nc3 e6 5. Bg5 Nbd7 6. e3 Qa5 7. cxd5 Nxd5 
+8. Rc1 Nxc3 9. bxc3 Ba3 10. Rc2 b6 11. Be2 Ba6 12. O-O Bxe2 13. Rxe2 O-O 
+14. e4 Rfe8 15. Re3 Bf8 16. e5 Qxa2 17. Nd2 c5 18. Ne4 cxd4 19. cxd4 Rac8 
+20. Qg4 Rc4 21. Rf3 Rxd4 22. Qf4 Ra8 23. Qxf7+ Kh8 24. Bf6 Rxe4 25. Rg3 
+Nxf6 26. exf6 g6 27. Rh3 h6 28. Qxg6 Qd2 29. Qxe4 Rc8 30. Rd3 Qc2 31. Qxe6
+Qc6 32. Qg4 Rc7 33. Qg6 Qe6 34. Rd8 1-0
+
+[Event "20th European Teams"]
+[Site "Reykjavik ISL"]
+[Date "2015.11.13"]
+[Round "1.1"]
+[White "Yilmaz, M"]
+[Black "Nepomniachtchi, I"]
+[Result "1/2-1/2"]
+[WhiteElo "2594"]
+[BlackElo "2705"]
+[ECO "D85"]
+[EventDate "2015.11.13"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[Opening "Gruenfeld"]
+[Variation "modern exchange variation"]
+[WhiteTeam "Turkey"]
+[BlackTeam "Russia"]
+[WhiteFideId "6302718"]
+[BlackFideId "4168119"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Nf3 c5
+8. Be3 Qa5 9. Qd2 Nd7 10. Bd3 O-O 11. O-O e5 12. d5 Nf6 13. c4 Qc7 14. Qb2
+Ne8 15. Bd2 Bg4 16. Ne1 Nd6 17. f3 Bd7 18. a4 f5 19. Nc2 Rae8 20. a5 Qd8 
+21. Qa3 b6 22. axb6 axb6 23. Rab1 Qc7 24. Bc3 Rb8 25. Qa1 Rfe8 26. Rfe1 b5
+27. cxb5 c4 28. Bf1 fxe4 29. fxe4 Ra8 30. Qb2 Nxb5 31. Ne3 Nd6 32. Bb4 
+Nxe4 33. Bxc4 Kh8 34. Qc2 Nf6 35. Bd3 Qd8 36. d6 Rc8 37. Qd2 Qb6 38. Kh1 
+Qd4 39. Ba5 Qxd6 40. Nc4 Qd4 41. Bc3 Qf4 42. Bxe5 Qxd2 43. Nxd2 Ng4 44. 
+Bxg7+ Kxg7 45. Kg1 1/2-1/2
+
+[Event "20th European Teams"]
+[Site "Reykjavik ISL"]
+[Date "2015.11.13"]
+[Round "1.1"]
+[White "Jakovenko, D"]
+[Black "Can, E"]
+[Result "1-0"]
+[WhiteElo "2735"]
+[BlackElo "2535"]
+[ECO "D30"]
+[EventDate "2015.11.13"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[Opening "Queen's gambit declined"]
+[WhiteTeam "Russia"]
+[BlackTeam "Turkey"]
+[WhiteFideId "4122356"]
+[BlackFideId "6302181"]
+
+1. d4 d5 2. c4 e6 3. Nf3 c6 4. e3 Bd6 5. Nc3 f5 6. Ne5 Nf6 7. Be2 O-O 8. 
+O-O b6 9. Rb1 Bb7 10. b4 Ne4 11. Nxe4 fxe4 12. f4 exf3 13. Nxf3 Nd7 14. c5
+Bc7 15. e4 a5 16. Ng5 Rxf1+ 17. Qxf1 Qe7 18. Bg4 Nf8 19. bxa5 Ba6 20. Qe1 
+bxc5 21. exd5 cxd5 22. Bxe6+ Nxe6 23. Qxe6+ Qxe6 24. Nxe6 Bxa5 25. Nxc5 
+Bc4 26. Bf4 Rf8 27. Bd6 Rf6 28. Be5 Rb6 29. Rxb6 Bxb6 30. a4 Kf7 31. Kf2 
+g5 32. g4 Ke7 33. Ke3 Bf1 34. Nb3 Bc4 35. Nd2 Ba6 36. Nf3 Bc8 37. h3 Bd7 
+38. Nxg5 h6 39. Nh7 Bxa4 40. Nf6 Ke6 41. Nh5 Kf7 42. Bg7 Kg6 43. Be5 Kg5 
+44. Nf4 Ba5 45. Nxd5 h5 46. Bf6+ Kg6 47. g5 Kf5 48. Ne7+ Ke6 49. d5+ Kf7 
+50. Nc6 Bc7 51. Kd4 h4 52. Kc5 Bg3 53. Nd8+ Kg6 54. Ne6 Kf7 55. Nd8+ Kg6 
+56. Nc6 Kf7 57. d6 Ke6 58. Nd4+ Kf7 59. Nf5 Be1 60. Ne7 Bd7 61. Be5 Bf2+ 
+62. Kd5 Be6+ 63. Ke4 Bxh3 64. g6+ Ke8 65. g7 Be6 66. g8=Q+ Bxg8 67. Nxg8 
+Kf7 68. Nh6+ Ke6 69. Nf5 1-0
+
+[Event "20th European Teams"]
+[Site "Reykjavik ISL"]
+[Date "2015.11.13"]
+[Round "1.2"]
+[White "Ivanchuk, V"]
+[Black "Lupulescu, C"]
+[Result "1-0"]
+[WhiteElo "2720"]
+[BlackElo "2631"]
+[ECO "D37"]
+[EventDate "2015.11.13"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[Opening "QGD"]
+[Variation "4.Nf3"]
+[WhiteTeam "Ukraine"]
+[BlackTeam "Romania"]
+[WhiteFideId "14100010"]
+[BlackFideId "1207822"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Qc2 O-O 6. cxd5 exd5 7. Bg5 h6 
+8. Bh4 Na6 9. e3 Nb4 10. Qb3 Bf5 11. Rc1 c5 12. dxc5 Qa5 13. Nd4 Nd3+ 14. 
+Bxd3 Bxd3 15. c6 Bc4 16. Qa4 Qc5 17. cxb7 Rab8 18. b3 Bd3 19. Kd2 Bg6 20. 
+Bxf6 Bxf6 21. Ne4 Qe7 22. Nc5 Be5 23. g3 Bd6 24. Nd7 Bb4+ 25. Ke2 Bh5+ 26.
+ Kf1 Bd2 27. Rc2 Rxb7 28. Nxf8 Rb4 29. Rc8 Qe4 30. Nfe6+ Kh7 31. Nf8+ Kg8 
+32. Ng6+ Kh7 33. Rh8+ Kxg6 34. Qc6+ f6 35. Qe8+ Qxe8 36. Rxe8 Bc3 37. Nc2 
+Re4 38. Rxe4 dxe4 39. Nd4 Bf3 40. Nxf3 exf3 41. g4 h5 42. gxh5+ Kxh5 43. 
+Rg1 g5 44. Rg3 g4 45. h3 1-0
+
+[Event "20th European Teams"]
+[Site "Reykjavik ISL"]
+[Date "2015.11.13"]
+[Round "1.2"]
+[White "Marin, Mi"]
+[Black "Kryvoruchko, Y"]
+[Result "1/2-1/2"]
+[WhiteElo "2589"]
+[BlackElo "2717"]
+[ECO "A14"]
+[EventDate "2015.11.13"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[Opening "English"]
+[Variation "Neo-Catalan declined"]
+[WhiteTeam "Romania"]
+[BlackTeam "Ukraine"]
+[WhiteFideId "1200020"]
+[BlackFideId "14109182"]
+
+1. Nf3 Nf6 2. g3 d5 3. Bg2 e6 4. O-O Be7 5. c4 O-O 6. b3 b6 7. Bb2 Bb7 8. 
+e3 Nbd7 9. Nc3 Ne4 10. cxd5 Nxc3 11. dxc3 Bxd5 12. c4 Bb7 13. Ne5 Nxe5 14.
+ Bxb7 Rb8 15. Bxe5 Rxb7 16. Qg4 g6 17. Rad1 Qc8 18. Rd2 f6 19. Bc3 c6 20. 
+Rfd1 e5 21. Qxc8 Rxc8 22. g4 Kf7 23. Rd7 Rcc7 24. Rxc7 Rxc7 25. Kg2 Ke6 
+26. e4 b5 27. Ba5 Rd7 28. Rxd7 Kxd7 29. cxb5 cxb5 30. Bc3 Ke6 31. Kf3 Bc5 
+32. Ke2 a6 33. h3 Bd6 34. Kf3 Bc5 35. Ke2 Bd6 36. Kf3 Bc5 1/2-1/2
+
+[Event "20th European Teams"]
+[Site "Reykjavik ISL"]
+[Date "2015.11.13"]
+[Round "1.2"]
+[White "Korobov, A"]
+[Black "Deac, Bogdan-Daniel"]
+[Result "1-0"]
+[WhiteElo "2709"]
+[BlackElo "2440"]
+[ECO "D52"]
+[EventDate "2015.11.13"]
+[WhiteTitle "GM"]
+[BlackTitle "IM"]
+[Opening "QGD"]
+[Variation "Cambridge Springs defence, Bogoljubow variation"]
+[WhiteTeam "Ukraine"]
+[BlackTeam "Romania"]
+[WhiteFideId "14105730"]
+[BlackFideId "1226380"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 c6 5. Bg5 Nbd7 6. e3 Qa5 7. Nd2 Bb4 8.
+ Qc2 O-O 9. Be2 c5 10. Bf4 cxd4 11. exd4 dxc4 12. Nxc4 Qd8 13. a3 Bxc3+ 
+14. bxc3 Nb6 15. Ne5 Nbd5 16. Bg5 Qa5 17. Rc1 Nd7 18. O-O Nxe5 19. dxe5 h6
+20. Bh4 Nf4 21. Qe4 Nxe2+ 22. Qxe2 b6 23. Rfe1 Bb7 24. Qg4 Kh7 25. Re3 
+Qxa3 26. Rd1 Rac8 27. c4 Qa2 28. Rc3 Qb2 29. Qd4 Qb4 30. h3 Rg8 31. Qd3+ 
+Kh8 32. Rcc1 Qc5 33. Qe2 a6 34. Kh2 b5 35. f3 bxc4 36. Rd7 Rc7 37. Rxc7 
+Qxc7 38. Rxc4 Qd7 39. Qe3 Kh7 40. Rd4 Qc7 41. Qd3+ Kh8 42. Rd7 Qxe5+ 43. 
+Bg3 Qb2 44. Rxf7 Bd5 45. Qe3 Qc2 46. Be5 Qg6 47. Qa7 Kh7 48. Qc7 a5 49. 
+Rf4 h5 50. h4 a4 51. Rf6 Rc8 52. Qd7 Rd8 53. Qxd8 gxf6 54. Bxf6 Qg8 55. 
+Qc7+ Kg6 56. Bb2 Qf7 57. Qg3+ Kh7 58. Qe5 Kg6 59. Bd4 Qe7 60. Kg1 a3 61. 
+g4 hxg4 62. h5+ Kh6 63. Qh8+ Kg5 64. f4+ 1-0
+
+[Event "20th European Teams"]
+[Site "Reykjavik ISL"]
+[Date "2015.11.13"]
+[Round "1.2"]
+[White "Parligras, M"]
+[Black "Areshchenko, A"]
+[Result "1/2-1/2"]
+[WhiteElo "2587"]
+[BlackElo "2682"]
+[ECO "D85"]
+[EventDate "2015.11.13"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[Opening "Gruenfeld"]
+[Variation "exchange variation"]
+[WhiteTeam "Romania"]
+[BlackTeam "Ukraine"]
+[WhiteFideId "1204297"]
+[BlackFideId "14109530"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Be3 c5
+8. Rc1 Qa5 9. Qd2 cxd4 10. cxd4 Qxd2+ 11. Bxd2 O-O 12. Nf3 Bg4 13. Be3 Rd8
+14. d5 Nd7 15. Nd4 Nb6 16. Nb5 Rac8 17. Rxc8 Rxc8 18. Be2 Bxe2 19. Kxe2 f5
+20. Nxa7 Rc2+ 21. Kf3 fxe4+ 22. Kxe4 Rc4+ 23. Kd3 Rc3+ 24. Ke4 Rc4+ 25. 
+Kd3 Rc3+ 26. Ke4 Rc4+ 1/2-1/2
+
+[Event "20th European Teams"]
+[Site "Reykjavik ISL"]
+[Date "2015.11.13"]
+[Round "1.3"]
+[White "Beliavsky, A"]
+[Black "Radjabov, T"]
+[Result "1/2-1/2"]
+[WhiteElo "2622"]
+[BlackElo "2739"]
+[ECO "D85"]
+[EventDate "2015.11.13"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[Opening "Gruenfeld"]
+[Variation "exchange variation"]
+[WhiteTeam "Slovenia"]
+[BlackTeam "Azerbaijan"]
+[WhiteFideId "14602377"]
+[BlackFideId "13400924"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. g3 Bg7 6. Bg2 Nxc3 7. bxc3 c5
+8. Nf3 cxd4 9. cxd4 Nc6 10. O-O Nxd4 11. Nxd4 Qxd4 12. Rb1 O-O 13. Qxd4 
+Bxd4 14. Bh6 Rd8 15. Bxb7 Rb8 16. Bxc8 Rbxc8 17. Rb7 Bc5 18. Rc1 f6 19. 
+Be3 Bxe3 20. Rxc8 Rxc8 21. fxe3 Rc2 22. Rxa7 Rxe2 23. Rxe7 Rxa2 24. h4 h5 
+25. Kf1 Kf8 26. Rb7 Kg8 27. Re7 Kf8 28. Rb7 Kg8 29. Re7 1/2-1/2
+
+[Event "20th European Teams"]
+[Site "Reykjavik ISL"]
+[Date "2015.11.13"]
+[Round "1.3"]
+[White "Naiditsch, A"]
+[Black "Lenic, L"]
+[Result "1-0"]
+[WhiteElo "2689"]
+[BlackElo "2625"]
+[ECO "C84"]
+[EventDate "2015.11.13"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[Opening "Ruy Lopez"]
+[Variation "closed defence"]
+[WhiteTeam "Azerbaijan"]
+[BlackTeam "Slovenia"]
+[WhiteFideId "4650891"]
+[BlackFideId "14603853"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. d3 d6 7. c3 O-O 8. 
+Re1 Re8 9. Nbd2 Bf8 10. h3 b5 11. Bc2 h6 12. a4 b4 13. a5 Rb8 14. Nc4 Bd7 
+15. Bd2 bxc3 16. bxc3 Qc8 17. Nh2 Be6 18. Ba4 Qb7 19. Ng4 Nxg4 20. hxg4 
+Red8 21. Bc2 d5 22. exd5 Bxd5 23. Ne3 Bb3 24. Rb1 Bxc2 25. Qxc2 Qa8 26. 
+Rxb8 Qxb8 27. Nf5 Qc8 28. Qa4 Qd7 29. Re3 Bc5 1-0
+
