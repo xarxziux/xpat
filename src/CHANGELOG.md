@@ -1,5 +1,29 @@
 # Change log
-###[unreleased]
+
+###[unreleased] 2015-12-05
+###Added
+ - experimental T5 analysis.
+
+###Changed
+ - script logic to keep all scores the same sign as the UCI protocol, only
+   changing them to the score from White's viewpoint when printing to the PGN
+   file.
+   
+ - logic of get_score, find_match, and main routines to use tuples instead of
+   dictionaries for several structures.
+   
+###[unreleased] 2015-12-03
+###Changed
+ - basic move-matching capability to separate scores for black and white.
+
+###Added
+ - check_game_end routine and extra logic for treating the final position.
+   
+ - next_move_score variable for checking the score of the move played to cp
+   and engine-matching calculations.
+
+
+###[unreleased] 2015-12-02
 ###Changed
  - is_book_position function to accepts a node instead of a board.  Reverted
    back to original setting - I can't ses how to send the starting node instead
@@ -9,7 +33,7 @@
    
  - variable names for all settings to uppercase.
    
- ###Added
+###Added
  - basic move-matching capability.  Largely untested and not fully implemented
    yet but it appears to be working.
    

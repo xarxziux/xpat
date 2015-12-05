@@ -24,7 +24,6 @@ import chess.polyglot
 
 #Engine settings
 ENGINE_NAME = "stockfish6"
-PV_MAX = 5
 SEARCH_DEPTH = 10
 HASH_SIZE = 128
 THREAD_COUNT = 1
@@ -37,44 +36,38 @@ BOOK_FILE = "polyglot/Elo2400.bin"
 #BOOK_FILE = "pgn/gamesout.pgn"
 
 
+#Tx settings
+PV_MAX = 5
+PV_MIN = 3
+CP_POSITION_CUTOFF = 200
+CP_PV_CUTOFF = 100
+
+
 #General settings
 MATE_SCORE = 1000
 CP_THRESHOLD = 300
 
 
-def get_score(eng_score, white_to_move):
-    ''' Convert the UCI score to the score from White's viewpoint '''
+def get_score(eng_score):
+    ''' Convert the UCI score output to an integer value bound by +/- MATE_SCORE '''
     
     if (eng_score.mate):
         
-        if (white_to_move):
-        
-            white_score = MATE_SCORE
-            
-        else:
-            
-            white_score = -MATE_SCORE
+        return -MATE_SCORE
             
     else:
         
-        if (white_to_move):
+        return_score = (int(eng_score.cp))
             
-            white_score = (int(eng_score.cp))
+        if (return_score > MATE_SCORE):
             
-        else:
+            return_score = MATE_SCORE
             
-            white_score = (int(-(eng_score.cp)))
+        if (return_score < -MATE_SCORE):
             
-        if (white_score > MATE_SCORE):
+            return_score = -MATE_SCORE
             
-            white_score = MATE_SCORE
-            
-        if (white_score < -MATE_SCORE):
-            
-            white_score = -MATE_SCORE
-            
-        
-    return white_score
+    return return_score
 
 
 def init_engine (eng_settings):
@@ -122,6 +115,25 @@ def evaluate_position (node, eng):
     eng.go(depth=SEARCH_DEPTH)
 
 
+def check_game_end (node):
+    ''' Checks whether the given position is a legal end '''
+    ''' If the game is a legal, as opposed to an agreed, end, then no engine
+        evaluation is necessary '''
+    
+    if (node.board().is_stalemate() or
+            node.board().is_insufficient_material() or
+            node.board().can_claim_draw()
+            ):
+        
+        return (True, 0)
+        
+    if (node.board().is_checkmate()):
+        
+        return (True, -(MATE_SCORE))
+            
+    return (False, 0)
+
+
 def open_book ():
     
     try:
@@ -143,25 +155,49 @@ def open_book ():
         
 
 
-def find_match (var_list, match_list):
+def find_match (pvs, match_list):
+    ''' Check if the move played is among the PV choices found by the engine '''
     
-    match_list[0] += 1
-    i = 1
-    
-    for var in var_list[1:]:
+    #First ignore positions with less than PV_MIN variations
+    if (len(pvs) < (PV_MIN + 1)):
         
-        if (var_list[0].move == var_list[i].move):
+        match_list[1] += 1
+        return False
+        
+    #Check if the score of the top choice falls outside the position threshold
+    if (abs(pvs[1][1]) >= CP_POSITION_CUTOFF):
+        
+        match_list[1] += 1
+        return False
+        
+    #Check if the score of PV_MIN falls outside the PV cutoff
+    if (pvs[1][1] - pvs[PV_MIN][1] > CP_PV_CUTOFF):
+        
+        match_list[1] += 1
+        return False
+        
+    match_list[0] += 1
+    
+    i = 2
+    
+    for var in pvs[1:]:
+        
+        if (pvs[0][0] == var[0]):
             
             match_list[i] += 1
-            return
+            return True
             
         i += 1
-        
+    return False
 
 
 def init_match_list ():
+    ''' Sets up the match list '''
+    ''' The first element is the number of move counted.
+        The second is the number of moves rejected.
+        Subsequent items show the matches for T1, T2, T3, etc. '''
     
-    match_list = [0]
+    match_list = [0,0]
     
     i = 0
     
@@ -185,13 +221,10 @@ def main():
     engine_data = chess.uci.InfoHandler()
     engine.info_handlers.append(engine_data)
     
-    score_card = init_match_list()
-    #white_match = init_match_list()
-    #black_match = init_match_list()
-    #print (score_card)
+    white_match = init_match_list()
+    black_match = init_match_list()
     
     #Book set-up
-    #polyglot_book = chess.polyglot.open_reader (BOOK_FILE)
     polyglot_book = open_book ()
     if not polyglot_book:
         
@@ -210,11 +243,31 @@ def main():
         #break
         
         print ("Analysing game ", i+1)
-        this_node = next_game.end().parent
+        this_node = next_game.end()
+        pv_list = []
+        
+        if is_book_position (polyglot_book, this_node.board()):
+            
+            this_node.comment = "Book position"
+            break
+            
+        legal_end = check_game_end(this_node)
+        
+        if legal_end[0]:
+            
+            pv_list.append ((this_node.move, -(legal_end[1])))
+            
+        else:
+            
+            evaluate_position (this_node, engine)
+            pv_list.append ((this_node.move, -(get_score (engine_data.info["score"][1]))))
+            #print (engine_data.info["score"])
+            #end_score = -(get_score (engine_data.info["score"][1]))
+            #pv_list.append ((this_node.move, end_score))
+            
+        this_node = this_node.parent
         
         while this_node:
-            
-            #running_board = this_node.board()
             
             #This line checks if the next move results in a book position
             if is_book_position (polyglot_book, this_node.variation(0).board()):
@@ -222,24 +275,39 @@ def main():
                 this_node.variation(0).comment = "Book position"
                 break
                 
-            
-            #engine.position(this_node.board())
-            #engine.go(depth=SEARCH_DEPTH)
             evaluate_position (this_node, engine)
             
-            for j in engine_data.info["pv"]:
+            for next_pv in engine_data.info["pv"]:
                 
-                pvmove = engine_data.info["pv"][j][0]
-                pvscore = (get_score (engine_data.info["score"][j], this_node.board().turn))/100
-                this_node.add_variation (pvmove,starting_comment = str(pvscore))
+                pv_move = engine_data.info["pv"][next_pv][0]
+                pv_score = (get_score (engine_data.info["score"][next_pv]))
+                pv_list.append ((pv_move, pv_score))
                 
-            find_match(this_node.variations, score_card)
-            
+                output_score = pv_score/100
+                
+                if not (this_node.board().turn):
+                    
+                    output_score = -output_score
+                    
+                this_node.add_variation (pv_move, starting_comment = str(output_score))
+                
+            if (this_node.board().turn):
+                
+                #print ("pv_list =", pv_list)
+                find_match(pv_list, white_match)
+                
+            else:
+                
+                #print ("pv_list =", pv_list)
+                find_match(pv_list, black_match)
+                
             print (".", end = "", flush=True)
+            pv_list = [(this_node.move, -(pv_list[1][1]))]
             this_node = this_node.parent
             
         print()
-        print (score_card)
+        print (white_match)
+        print (black_match)
         print()
         
         next_game.end().comment = ("T5 analysis performed by '" + engine.name + 
